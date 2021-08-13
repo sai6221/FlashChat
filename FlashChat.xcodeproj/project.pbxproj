@@ -13,6 +13,9 @@
 		C1DC31D926C685A3006ACD4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1DC31D726C685A3006ACD4D /* Main.storyboard */; };
 		C1DC31DB26C685A7006ACD4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1DC31DA26C685A7006ACD4D /* Assets.xcassets */; };
 		C1DC31DE26C685A7006ACD4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1DC31DC26C685A7006ACD4D /* LaunchScreen.storyboard */; };
+		C1DC31E926C6885F006ACD4D /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DC31E826C6885F006ACD4D /* RegisterViewController.swift */; };
+		C1DC31EB26C68872006ACD4D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DC31EA26C68872006ACD4D /* LoginViewController.swift */; };
+		C1DC31ED26C6887F006ACD4D /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DC31EC26C6887F006ACD4D /* ChatViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		C1DC31DA26C685A7006ACD4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C1DC31DD26C685A7006ACD4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C1DC31DF26C685A7006ACD4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1DC31E826C6885F006ACD4D /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		C1DC31EA26C68872006ACD4D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		C1DC31EC26C6887F006ACD4D /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +93,9 @@
 			isa = PBXGroup;
 			children = (
 				C1DC31D526C685A3006ACD4D /* ViewController.swift */,
+				C1DC31E826C6885F006ACD4D /* RegisterViewController.swift */,
+				C1DC31EA26C68872006ACD4D /* LoginViewController.swift */,
+				C1DC31EC26C6887F006ACD4D /* ChatViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -164,6 +173,9 @@
 				C1DC31D626C685A3006ACD4D /* ViewController.swift in Sources */,
 				C1DC31D226C685A3006ACD4D /* AppDelegate.swift in Sources */,
 				C1DC31D426C685A3006ACD4D /* SceneDelegate.swift in Sources */,
+				C1DC31EB26C68872006ACD4D /* LoginViewController.swift in Sources */,
+				C1DC31ED26C6887F006ACD4D /* ChatViewController.swift in Sources */,
+				C1DC31E926C6885F006ACD4D /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
