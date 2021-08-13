@@ -58,13 +58,37 @@
 			children = (
 				C1DC31D126C685A3006ACD4D /* AppDelegate.swift */,
 				C1DC31D326C685A3006ACD4D /* SceneDelegate.swift */,
-				C1DC31D526C685A3006ACD4D /* ViewController.swift */,
-				C1DC31D726C685A3006ACD4D /* Main.storyboard */,
+				C1DC31E726C68708006ACD4D /* Controller */,
+				C1DC31E626C68703006ACD4D /* View */,
+				C1DC31E526C686FB006ACD4D /* Model */,
 				C1DC31DA26C685A7006ACD4D /* Assets.xcassets */,
 				C1DC31DC26C685A7006ACD4D /* LaunchScreen.storyboard */,
 				C1DC31DF26C685A7006ACD4D /* Info.plist */,
 			);
 			path = FlashChat;
+			sourceTree = "<group>";
+		};
+		C1DC31E526C686FB006ACD4D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C1DC31E626C68703006ACD4D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C1DC31D726C685A3006ACD4D /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C1DC31E726C68708006ACD4D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C1DC31D526C685A3006ACD4D /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,7 +319,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Sairo.FlashChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -313,7 +337,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Sairo.FlashChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
