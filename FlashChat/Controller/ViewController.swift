@@ -14,6 +14,15 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        let title = "⚡️FlashChat"
+        var charIndex = 0.0
+        titleLabel.text = ""
+        for i in title{
+            Timer.scheduledTimer(withTimeInterval: 0.1 * charIndex, repeats: false) { timer in
+                self.titleLabel.text?.append(i)
+            }
+            charIndex += 1
+        }
     }
 
 
