@@ -309,7 +309,7 @@
                                     <segue destination="pRx-bt-Hj5" kind="show" id="71W-EE-YPR"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="⚡️FlashChat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cms-Hg-i1m">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="⚡️FlashChat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cms-Hg-i1m" customClass="CLTypingLabel" customModule="CLTypingLabel">
                                 <rect key="frame" x="53.5" y="418" width="307.5" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="rvi-bS-jzR"/>
