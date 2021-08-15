@@ -96,9 +96,7 @@
                     <navigationItem key="navigationItem" id="DUX-Zd-8og"/>
                     <connections>
                         <outlet property="emailTextField" destination="bhG-ej-sq8" id="O9b-cd-eyB"/>
-                        <outlet property="emailTextfield" destination="bhG-ej-sq8" id="Hkz-wr-shw"/>
                         <outlet property="passwordTextField" destination="Gau-3R-ReW" id="FWr-bP-dwa"/>
-                        <outlet property="passwordTextfield" destination="Gau-3R-ReW" id="dRv-dm-U1Y"/>
                         <segue destination="8ML-43-KoE" kind="show" identifier="RegisterToChat" id="gJc-8S-wnZ"/>
                     </connections>
                 </viewController>
@@ -158,8 +156,7 @@
                                             <color key="titleColor" name="BrandLightBlue"/>
                                         </state>
                                         <connections>
-                                            <action selector="loginButtonPressed:" destination="pRx-bt-Hj5" eventType="touchUpInside" id="Lff-Er-bSR"/>
-                                            <action selector="loginPressed:" destination="pRx-bt-Hj5" eventType="touchUpInside" id="DIK-VG-she"/>
+                                            <action selector="loginButtonPressed:" destination="pRx-bt-Hj5" eventType="touchUpInside" id="Fuu-0z-7YG"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -194,9 +191,7 @@
                     <navigationItem key="navigationItem" id="Kv2-3n-4AC"/>
                     <connections>
                         <outlet property="emailTextField" destination="o1o-PN-kPo" id="ESy-c8-JXq"/>
-                        <outlet property="emailTextfield" destination="o1o-PN-kPo" id="ezx-nK-oqK"/>
                         <outlet property="passwordTextField" destination="VU1-WF-hZk" id="Lix-mZ-hRv"/>
-                        <outlet property="passwordTextfield" destination="VU1-WF-hZk" id="oQC-TQ-7Je"/>
                         <segue destination="8ML-43-KoE" kind="show" identifier="LogInToChat" id="uYS-cp-Ed2"/>
                     </connections>
                 </viewController>
@@ -279,7 +274,6 @@
                     <navigationItem key="navigationItem" id="5cJ-Jb-sPw"/>
                     <connections>
                         <outlet property="messageTextField" destination="M4E-Ce-slr" id="WVm-wm-p69"/>
-                        <outlet property="messageTextfield" destination="M4E-Ce-slr" id="hDo-RP-8ia"/>
                         <outlet property="tableView" destination="cSk-Y8-jpf" id="Kpv-j0-sDL"/>
                     </connections>
                 </viewController>
@@ -376,6 +370,11 @@
             <point key="canvasLocation" x="-86.956521739130437" y="134.59821428571428"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="Cms-Hg-i1m">
+            <size key="intrinsicContentSize" width="307.5" height="60"/>
+        </designable>
+    </designables>
     <inferredMetricsTieBreakers>
         <segue reference="uYS-cp-Ed2"/>
     </inferredMetricsTieBreakers>
