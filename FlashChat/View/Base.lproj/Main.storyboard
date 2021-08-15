@@ -271,7 +271,13 @@
                             <constraint firstItem="Gib-4T-17D" firstAttribute="trailing" secondItem="GLL-IS-Ci1" secondAttribute="trailing" id="yaf-kY-D4K"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="5cJ-Jb-sPw"/>
+                    <navigationItem key="navigationItem" id="5cJ-Jb-sPw">
+                        <barButtonItem key="rightBarButtonItem" title="LogOut" id="qqL-Iv-Xfc">
+                            <connections>
+                                <action selector="LogOutPressed:" destination="8ML-43-KoE" id="4Nn-ow-OtR"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="messageTextField" destination="M4E-Ce-slr" id="WVm-wm-p69"/>
                         <outlet property="tableView" destination="cSk-Y8-jpf" id="Kpv-j0-sDL"/>
