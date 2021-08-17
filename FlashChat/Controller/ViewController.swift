@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        titleLabel.text = "⚡️FlashChat"
+        titleLabel.text = K.appName
         // Do any additional setup after loading the view.
 //        let title = "⚡️FlashChat"
 //        var charIndex = 0.0
