@@ -50,6 +50,8 @@ class ChatViewController: UIViewController {
                             
                             DispatchQueue.main.async {
                                 self.tableView.reloadData()
+                                let indexPath = IndexPath(row: self.messages.count - 1, section: 0)
+                                self.tableView.scrollToRow(at: indexPath, at: .top, animated: true)
                             }
                         }
                     }
@@ -67,6 +69,10 @@ class ChatViewController: UIViewController {
                 }
                 else{
                     print("Successfully saved")
+                    
+                    DispatchQueue.main.async {
+                        self.messageTextField.text = ""
+                    }
                 }
             }
         }
