@@ -26,11 +26,42 @@ class ChatViewController: UIViewController {
         navigationItem.hidesBackButton = true
         tableView.register(UINib(nibName: K.cellNibName, bundle: nil), forCellReuseIdentifier: K.cellIdentifier)
         // Do any additional setup after loading the view.
+        loadMessages()
+    }
+    
+    func loadMessages(){
+        messages = []
+        db.collection(K.FStore.collectionName)
+            .order(by: K.FStore.dateField)
+            .addSnapshotListener {
+            QuerySnapshot, error in
+            
+            self.messages = []
+            if let e = error {
+                print("There was an issue retrieving data from Firestore. \(e)")
+            }
+            else{
+                if let snapshotDocuments = QuerySnapshot?.documents{
+                    for doc in snapshotDocuments{
+                        let data = doc.data()
+                        if let sender = data[K.FStore.senderField] as? String, let messageBody = data[K.FStore.bodyField] as? String{
+                            let newMessages = Messages(sender: sender, body: messageBody)
+                            self.messages.append(newMessages)
+                            
+                            DispatchQueue.main.async {
+                                self.tableView.reloadData()
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
     
     @IBAction func sendPressed(_ sender: UIButton) {
         if let messageBody = messageTextField.text, let messageSender = Auth.auth().currentUser?.email{
-            db.collection(K.FStore.collectionName).addDocument(data: [K.FStore.senderField: messageSender, K.FStore.bodyField: messageBody]) { error in
+            db.collection(K.FStore.collectionName).addDocument(data: [K.FStore.senderField: messageSender, K.FStore.bodyField: messageBody,
+                K.FStore.dateField: Date().timeIntervalSince1970]) { error in
                 if let e = error {
                     print("There was an issue saving data to firebase \(e)")
                 }
